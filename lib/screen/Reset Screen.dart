@@ -32,7 +32,8 @@ class _LoginPageState extends State<ResetPage> {
     const SizedBox(height: 64,),
     Text("Forget Your Password?",
       style: GoogleFonts.inter
-        (textStyle:Theme.of(context).textTheme.displayLarge,fontSize: 20,fontWeight:FontWeight.w800,color: Colors.black38 ),
+        (textStyle:Theme.of(context).textTheme.displayLarge,fontSize: 40,fontWeight:FontWeight.w800,
+      ),
     textAlign: TextAlign.center,
     ),
     const  SizedBox(height: 15,),

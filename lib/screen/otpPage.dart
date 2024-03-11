@@ -28,7 +28,7 @@ class _VerificationPageState extends State<VerificationPage> {
                 children: [
               const SizedBox(height: 64,),
                   Text("We have sent otp to your gmail",
-                    style: TextStyle(fontSize: 30,fontWeight: FontWeight.w800),
+                    style: TextStyle(fontSize: 35,fontWeight: FontWeight.w800),
                     textAlign: TextAlign.center,
                   ),
                   const  SizedBox(height: 15,),
@@ -49,7 +49,7 @@ class _VerificationPageState extends State<VerificationPage> {
                           MaterialPageRoute(
                               builder: (context) => Password())
                       );
-                    }, child: Text("Next",style: TextStyle(fontSize: 20, color: Colors.black87),),),
+                    }, child: Text("Verify",style: TextStyle(fontSize: 20, color: Colors.black87),),),
                   ),
               ]
           ),
