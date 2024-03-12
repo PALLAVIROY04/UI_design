@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../common_widget/Otp.dart';
 import 'Admin Panel.dart';
@@ -34,9 +35,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 180),
                   child: Container(
-                    child: Text("Register",style: TextStyle(
-                        fontSize: 45,
-                        fontWeight: FontWeight.w800),
+                    child: Text("Register",style: GoogleFonts.inter(
+                        fontSize: 40,
+                        fontWeight: FontWeight.w500),
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -88,7 +89,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               MaterialPageRoute(
                                   builder: (context) => AdminPanel ())
                           );
-                        }, child: Text("Register",style: TextStyle(fontSize: 20, color: Colors.black87),),),
+                        }, child: Text("Register",style: TextStyle(fontSize: 24,fontWeight: FontWeight.w600, color: Color(0xffFBD4AC),),),),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,

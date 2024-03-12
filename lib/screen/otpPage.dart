@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_design/common_widget/Otp.dart';
 import 'package:ui_design/screen/password.dart';
 
@@ -21,14 +22,14 @@ class _VerificationPageState extends State<VerificationPage> {
     ),
     ),
       child: Scaffold(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color(0xffFBE8C7),
         body: SingleChildScrollView(
           child: Padding(padding: EdgeInsets.symmetric(vertical: 25,horizontal: 25),
               child: Column(
                 children: [
               const SizedBox(height: 64,),
                   Text("We have sent otp to your gmail",
-                    style: TextStyle(fontSize: 35,fontWeight: FontWeight.w800),
+                    style: TextStyle(fontSize: 40,fontWeight: FontWeight.w500),
                     textAlign: TextAlign.center,
                   ),
                   const  SizedBox(height: 15,),
@@ -43,13 +44,27 @@ class _VerificationPageState extends State<VerificationPage> {
                   Container(
                     height: 50,
                     width: MediaQuery.of(context).size.height*0.4,
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black12),
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Color(0xffFBD4AC),
+
+                    border: Border.all(width: 1)
+                    ),
                     child: TextButton(onPressed: (){
                       Navigator.push(context,
                           MaterialPageRoute(
                               builder: (context) => Password())
                       );
-                    }, child: Text("Verify",style: TextStyle(fontSize: 20, color: Colors.black87),),),
+                    }, child: Text("Verify",style: GoogleFonts.inter(fontSize: 24,fontWeight: FontWeight.w600 ,color: Colors.black54),),),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("If you don't recieve a code?",style: GoogleFonts.inter(fontSize: 16,fontWeight: FontWeight.w400 )),
+                      TextButton(onPressed: () {},
+
+                          child: Text("Resend",style: GoogleFonts.inter
+                            (textStyle:Theme.of(context).textTheme.displayLarge,fontSize: 16,fontWeight:FontWeight.w600,color: Colors.black38 ),)
+                      ),
+                    ],
                   ),
               ]
           ),

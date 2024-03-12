@@ -59,13 +59,14 @@ class _LoginPageState extends State<ResetPage> {
       Container(
         height: 50,
         width: MediaQuery.of(context).size.height*0.4,
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black12),
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Color(0xffFBD4AC),
+        border: Border.all(width: 1)),
         child: TextButton(onPressed: (){
           Navigator.push(context,
               MaterialPageRoute(
                   builder: (context) => VerificationPage())
           );
-        }, child: Text("Next",style: TextStyle(fontSize: 20, color: Colors.black87),),),
+        }, child: Text("Next",style: GoogleFonts.inter(fontSize: 24,fontWeight: FontWeight.w600, color: Colors.black87),),),
       ),
       ]
     ),

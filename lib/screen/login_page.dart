@@ -35,8 +35,8 @@ class _LoginPageState extends State<LoginPage> {
                  padding: const EdgeInsets.symmetric(horizontal: 130, vertical: 180),
                  child: Container(
                   child: Text("Login",style: GoogleFonts.inter(
-                      fontSize: 45,
-                      fontWeight: FontWeight.w800),
+                      fontSize: 40,
+                      fontWeight: FontWeight.w500),
                   textAlign: TextAlign.center,
                   ),
                              ),
@@ -72,13 +72,15 @@ class _LoginPageState extends State<LoginPage> {
                      height: 50,
                      width: MediaQuery.of(context).size.height*0.4,
                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
-                     border: Border.all(width: 1)),
+                     border: Border.all(width: 1),
+                     color:  Color(0xffFBD4AC),
+                     ),
                      child: TextButton(onPressed: (){
                        Navigator.push(context,
                            MaterialPageRoute(
                                builder: (context) =>CreateCard())
                        );
-                     }, child: Text("Login",style: GoogleFonts.inter(fontSize: 20, color: Colors.black87),),),
+                     }, child: Text("Login",style: GoogleFonts.inter(fontSize: 24,fontWeight: FontWeight.w600,color: Colors.black54 ),),),
                    ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -92,7 +94,7 @@ class _LoginPageState extends State<LoginPage> {
                       },
 
                        child: Text("Register",style: GoogleFonts.inter
-                         (textStyle:Theme.of(context).textTheme.displayLarge,fontSize: 18,fontWeight:FontWeight.w300,color: Colors.black38 ),)
+                         (textStyle:Theme.of(context).textTheme.displayLarge,fontSize: 18,fontWeight:FontWeight.w600,color: Colors.black38 ),)
                       ),
                     ],
                   ),

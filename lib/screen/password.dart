@@ -65,7 +65,7 @@ class _PasswordState extends State<Password> {
     Container(
     height: 50,
     width: MediaQuery.of(context).size.height*0.4,
-    decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.black12,
+    decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Color(0xffFBD4AC),
     border: Border.all(width: 1),
     ),
     child: TextButton(onPressed: (){
@@ -73,7 +73,7 @@ class _PasswordState extends State<Password> {
     MaterialPageRoute(
     builder: (context) => LoginPage())
     );
-    }, child: Text("Done",style: TextStyle(fontSize: 20, color: Colors.black87),),),
+    }, child: Text("Done",style: TextStyle(fontSize: 20, color: Colors.black54),),),
     ),
       ]
     ),
